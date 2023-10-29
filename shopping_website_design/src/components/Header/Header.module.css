@@ -1,0 +1,59 @@
+.header {
+   padding: 46px 0 56px;
+   text-transform: uppercase;
+}
+
+.row {
+   display: flex;
+   justify-content: space-between;
+   column-gap: 30px;
+   align-items: center;
+}
+
+.logo {
+   display: flex;
+   column-gap: 13px;
+
+   font-size: 40px;
+   font-weight: 900;
+   line-height: normal;
+   letter-spacing: 1.2px;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+   column-gap: 54px;
+}
+
+.nav ul {
+   display: flex;
+   column-gap: 65px;
+   align-items: center;
+
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   letter-spacing: 0.22px;
+}
+
+.nav a {
+   color: #000;
+}
+
+.sign_button {
+   flex-shrink: 0;
+
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   letter-spacing: -0.72px;
+   text-transform: uppercase;
+
+   color: white;
+   background-color: black;
+   padding: 13px 22px;
+   border-radius: 7px;
+}

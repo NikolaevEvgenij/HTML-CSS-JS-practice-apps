@@ -1,0 +1,98 @@
+.promo {
+   margin-bottom: 63px;
+}
+
+.content {
+   display: flex;
+
+   column-gap: 24px;
+   margin: 56px 0 63px;
+   padding: 68px 0 0 120px;
+   border-radius: 59px;
+   background: #f4f6f5;
+}
+.info {
+   display: flex;
+   flex-direction: column;
+   row-gap: 32px;
+}
+.title {
+   position: relative;
+   max-width: 480px;
+   margin: 8px 0;
+   color: #000;
+   font-size: 96px;
+   font-weight: 900;
+   line-height: 1.25;
+   z-index: 1;
+}
+
+.highlight1 {
+   display: inline-block;
+   position: relative;
+}
+
+.highlight1::before {
+   position: absolute;
+   left: -38px;
+   content: "";
+   width: 465px;
+   height: 112px;
+   background: #fff;
+   transform: rotate(-2deg);
+   z-index: -1;
+}
+
+.highlight2 {
+   display: inline-block;
+   position: relative;
+}
+
+.highlight2::before {
+   position: absolute;
+   left: -26px;
+   content: "";
+   width: 495px;
+   height: 117px;
+   background: #ebd96b;
+   transform: rotate(-2deg);
+   z-index: -1;
+}
+
+.desctiption {
+   color: #000;
+   font-size: 32px;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: -1.6px;
+}
+
+.purches {
+   display: flex;
+   column-gap: 34px;
+   align-items: center;
+}
+
+.purches::before {
+   content: "";
+   display: inline-block;
+   width: 190px;
+   height: 32px;
+   background-image: url(../../img/fashion-images/icons/decor-yellow.svg);
+}
+.shop_button {
+   color: #fff;
+   font-size: 30px;
+   font-weight: 500;
+   line-height: normal;
+   letter-spacing: -1.5px;
+
+   border-radius: 10px;
+   background: #000;
+   padding: 19px 40px;
+}
+
+.promo-img {
+   padding-right: 80px;
+   height: 784px;
+}

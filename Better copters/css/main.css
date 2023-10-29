@@ -1,0 +1,652 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol,
+ul {
+   list-style: none;
+}
+blockquote,
+q {
+   quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: "";
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+strong {
+   font-weight: 400;
+}
+cite,
+em {
+   font-style: italic;
+}
+
+/*
+  ========================================
+  Полосы
+  ========================================
+*/
+
+.row,
+.row-alt {
+   min-width: 960px;
+}
+
+.row {
+   background: #fff;
+   padding: 66px 0 44px 0;
+}
+
+.row-alt {
+   background: rgba(241, 231, 103, 1);
+   background: -moz-linear-gradient(
+      left,
+      rgba(241, 231, 103, 1) 0%,
+      rgba(241, 231, 103, 1) 32%,
+      rgba(254, 182, 69, 1) 100%
+   );
+   background: -webkit-gradient(
+      left top,
+      right top,
+      color-stop(0%, rgba(241, 231, 103, 1)),
+      color-stop(32%, rgba(241, 231, 103, 1)),
+      color-stop(100%, rgba(254, 182, 69, 1))
+   );
+   background: -webkit-linear-gradient(
+      left,
+      rgba(241, 231, 103, 1) 0%,
+      rgba(241, 231, 103, 1) 32%,
+      rgba(254, 182, 69, 1) 100%
+   );
+   background: -o-linear-gradient(
+      left,
+      rgba(241, 231, 103, 1) 0%,
+      rgba(241, 231, 103, 1) 32%,
+      rgba(254, 182, 69, 1) 100%
+   );
+   background: -ms-linear-gradient(
+      left,
+      rgba(241, 231, 103, 1) 0%,
+      rgba(241, 231, 103, 1) 32%,
+      rgba(254, 182, 69, 1) 100%
+   );
+   background: linear-gradient(
+      to right,
+      rgba(241, 231, 103, 1) 0%,
+      rgba(241, 231, 103, 1) 32%,
+      rgba(254, 182, 69, 1) 100%
+   );
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 );
+   padding: 44px 0 22px 0;
+}
+
+/*
+  ========================================
+  Вступление
+  ========================================
+*/
+
+.lead {
+   text-align: center;
+}
+
+.lead p {
+   font-size: 21px;
+   line-height: 33px;
+}
+
+/*
+  ========================================
+  Пользовательские стили
+  ========================================
+*/
+
+html {
+   color: #367cad;
+}
+body {
+   background: #293f50;
+   font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+}
+
+h1 {
+   font-size: 36px;
+   line-height: 44px;
+}
+h2 {
+   font-size: 24px;
+   line-height: 44px;
+}
+h3 {
+   font-size: 21px;
+}
+h4 {
+   font-size: 18px;
+}
+h5 {
+   color: #a9b2b9;
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+a {
+   color: #367cad;
+   text-decoration: none;
+}
+a:hover {
+   color: #0026e3;
+}
+p a {
+   border-bottom: 1px solid #dfe2e5;
+}
+.primary-nav {
+   font-size: 14px;
+   font-weight: 600;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+.hero {
+   color: #fff;
+   line-height: 44px;
+   padding: 22px 80px 36px 60px;
+   text-align: center;
+}
+
+.company,
+#clog {
+   line-height: 35px;
+   font-size: 20px;
+}
+
+/*
+  ========================================
+  Сетка
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group::before,
+.group::after {
+   content: "";
+   display: table;
+}
+.group::after {
+   clear: both;
+}
+.group {
+   clear: both;
+   zoom: 1;
+}
+
+.container,
+.grid {
+   margin: 0 auto;
+   width: 960px;
+}
+
+.container {
+   padding-left: 30px;
+   padding-right: 30px;
+}
+
+/*
+  ========================================
+  Основной заголовок
+  ========================================
+*/
+
+.logo {
+   border: 4px solid #648880;
+   color: #fff;
+   float: left;
+   font-size: 44px;
+   font-weight: 100;
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+}
+
+/*
+  ========================================
+  Типографика
+  ========================================
+*/
+
+h1,
+h3,
+p {
+   margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   color: #648880;
+}
+
+/*
+  ========================================
+  Изображения
+  ========================================
+*/
+
+.teaser img {
+   display: block;
+   max-width: 100%;
+   margin-bottom: 22px;
+   border-radius: 5px;
+}
+
+.copter-info img {
+   border: 1px solid #648880;
+   border-radius: 50%;
+   height: 180px;
+   margin: -50px 0 22px 0;
+   vertical-align: top;
+}
+
+/*
+  ========================================
+  Навигация
+  ========================================
+*/
+
+.nav {
+   text-align: right;
+}
+
+.nav li {
+   display: inline-block;
+   margin: 0 9px;
+   vertical-align: top;
+}
+
+.nav li:last-child {
+   margin-right: 0;
+}
+
+/*
+  ========================================
+  Главная страница
+  ========================================
+*/
+
+.leti {
+   margin: 30px 0 22px 0;
+   text-align: right;
+}
+.btn {
+   border-radius: 10px;
+   display: inline-block;
+   margin: 0;
+   color: #fff;
+   cursor: pointer;
+   font-variant: 500;
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+}
+
+.btn-sp {
+   border: 2px solid #fff;
+   padding: 5px 25px;
+}
+
+.btn-sp:hover {
+   background: #fff;
+}
+
+.fuck {
+   height: 120px;
+   width: 600px;
+
+   padding: 10px;
+   display: inline-block;
+   border: 4px solid #fff;
+   border-radius: 20px 45px;
+}
+
+.right {
+   margin-top: 20px;
+}
+/*
+==========================================
+Сетка
+*/
+
+.col-1-3 {
+   width: 33%;
+}
+
+.col-2-3 {
+   width: 66%;
+}
+
+.col-1-3,
+.col-2-3 {
+   display: inline-block;
+   vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+   padding: 0 15px;
+}
+
+/*
+  ========================================
+  Основной подвал
+  ========================================
+*/
+
+.primary-footer {
+   padding-top: 44px;
+   padding-bottom: 44px;
+}
+
+.primary-header a,
+.primary-footer a {
+   color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+   color: #0026e3;
+}
+
+/*
+  ========================================
+  Модели
+  ========================================
+*/
+
+.copter-info {
+   border: 1px solid #dfe2e5;
+   border-radius: 5px;
+   margin-top: 60px;
+   padding-bottom: 22px;
+   text-align: center;
+}
+
+/*
+  ========================================
+  Шоу!
+  ========================================
+*/
+
+table {
+   margin-bottom: 44px;
+   width: 100%;
+}
+
+table:last-child {
+   margin-bottom: 0;
+}
+
+th,
+td {
+   padding-bottom: 22px;
+   vertical-align: center;
+}
+
+th {
+   padding-right: 45px;
+   text-align: right;
+   width: 20%;
+}
+
+td {
+   width: 40%;
+}
+
+thead {
+   line-height: 44px;
+}
+
+thead th {
+   color: #648880;
+   font-size: 24px;
+}
+
+tbody th {
+   color: #a9b2b9;
+   font-size: 16px;
+   font-weight: 400;
+   padding-top: 22px;
+   text-transform: uppercase;
+}
+
+tbody td {
+   border-top: 2px solid #dfe2e5;
+}
+tbody td:first-of-type {
+   padding-right: 15px;
+}
+tbody td:last-of-type {
+   padding-left: 15px;
+}
+tbody td:only-of-type {
+   padding-left: 0;
+   padding-right: 0;
+}
+table a {
+   color: #888;
+}
+table h4 {
+   margin-bottom: 0;
+}
+.schedule-offset {
+   color: #a9b2b9;
+}
+
+/*
+  ========================================
+  Адреса
+  ========================================
+*/
+
+.venue-moscow {
+   margin-bottom: 66px;
+}
+
+.venue-spb {
+   margin-bottom: 22px;
+}
+
+.vanue-map {
+   height: 264px;
+}
+
+/*
+  ========================================
+  Регистрация
+  ========================================
+*/
+
+#udvent {
+   list-style-type: square;
+   margin-left: 15px;
+}
+
+form {
+   margin-bottom: 22px;
+}
+input,
+select,
+textarea {
+   font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+}
+
+.register-group label {
+   color: #648880;
+   cursor: pointer;
+   font-weight: 400;
+}
+
+.register-group input,
+.register-group select,
+.register-group textarea {
+   border: 1px solid #c6c9cc;
+   border-radius: 5px;
+   color: #888;
+   display: block;
+   margin: 5px 0 10px 0;
+   padding: 5px 8px;
+}
+
+.register-group input,
+.register-group textarea {
+   width: 100%;
+}
+
+.register-group select {
+   height: 34px;
+   width: 200px;
+}
+
+.register-group input.bip {
+   width: 20px;
+   display: inline-block;
+   margin: 10px 0 15px 0;
+}
+
+.register-group textarea {
+   height: 78px;
+}
+
+.btn-default {
+   border: 0;
+   background: #648880;
+   padding: 11px 30px;
+   font-size: 14px;
+}
+
+.btn-default:hover {
+   background: #77a198;
+}

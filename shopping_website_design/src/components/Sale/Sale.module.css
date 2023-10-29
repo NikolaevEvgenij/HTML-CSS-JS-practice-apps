@@ -1,0 +1,70 @@
+.sale {
+}
+.content {
+   display: flex;
+   justify-content: space-between;
+   padding-right: 99px;
+   column-gap: 86px;
+   background: linear-gradient(
+      1deg,
+      #e0c340 0.13%,
+      #dfc23e 3.97%,
+      #e1c441 7.2%,
+      #e3c743 10.13%,
+      #e4c542 12.98%,
+      #e6c744 15.99%,
+      #e7c845 19.52%,
+      #e5c643 23.96%,
+      #e6c945 30.43%,
+      #e3c743 36.49%,
+      #e9ca48 42.49%,
+      #edce49 49.35%,
+      #f0d44c 55.42%,
+      #f4d84f 61.43%,
+      #f6da52 65.74%,
+      #f7db53 72.23%,
+      #f9dd55 77.43%,
+      #f9df56 83.84%,
+      #fae157 91.52%,
+      #f9df56 97.87%
+   );
+}
+.img {
+}
+.info {
+   padding: 139px 0 155px 0;
+   max-width: 643px;
+}
+.title {
+   font-size: 111px;
+   font-weight: 900;
+   line-height: 1.23;
+   margin-bottom: 33px;
+}
+.desc {
+   color: #231300;
+
+   font-size: 36.04px;
+   font-weight: 500;
+   line-height: 1.45; /* 145.161% */
+   letter-spacing: -0.721px;
+
+   margin-bottom: 40.69px;
+}
+.date {
+   font-size: 36.04px;
+   font-weight: 700;
+   line-height: 1.45;
+   letter-spacing: 0.721px;
+   margin-bottom: 10.5px;
+}
+.terms {
+   font-size: 36.04px;
+   font-weight: 400;
+   line-height: 1.45;
+   letter-spacing: -0.721px;
+   margin-bottom: 51px;
+}
+.button {
+   text-transform: uppercase;
+}
